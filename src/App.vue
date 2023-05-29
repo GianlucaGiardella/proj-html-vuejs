@@ -9,11 +9,16 @@ export default {
     Main,
     Footer,
   },
+  data() {
+    return {
+      arrNav: ["Home", "About", "Services", "Showcase", "Blog", "Contact"],
+    };
+  },
 };
 </script>
 
 <template>
-  <Header />
+  <Header :nav="arrNav" />
   <Main />
   <Footer />
 </template>
