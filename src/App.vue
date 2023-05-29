@@ -12,6 +12,12 @@ export default {
 };
 </script>
 
-<template></template>
+<template>
+  <Header />
+  <Main />
+  <Footer />
+</template>
 
-<style></style>
+<style lang="scss">
+@use "./assets/styles/general.scss" as *;
+</style>
