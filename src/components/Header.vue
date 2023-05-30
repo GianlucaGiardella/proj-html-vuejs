@@ -95,9 +95,6 @@ export default {
   p > span:first-child {
     margin-inline-end: 0.5rem;
   }
-  svg {
-    cursor: pointer;
-  }
 }
 
 nav {
@@ -107,10 +104,6 @@ nav {
   justify-content: space-between;
   font-size: 0.8rem;
   text-transform: uppercase;
-}
-
-.btn:hover {
-  cursor: pointer;
 }
 
 nav {

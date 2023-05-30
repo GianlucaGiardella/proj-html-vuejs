@@ -41,6 +41,11 @@ video {
   color: #ffffffcf;
 }
 
+.btn:hover,
+svg:hover {
+  cursor: pointer;
+}
+
 .green-gradient {
   background-image: linear-gradient(to right, #90e062, #00d9a6);
   box-shadow: 6px 8px 60px -5px #9bffd0;
