@@ -1,18 +1,18 @@
 <script>
 import Features from "./main-components/Features.vue";
 import About from "./main-components/About.vue";
-import Projects from "./main-components/Projects.vue";
+import Showcase from "./main-components/Showcase.vue";
 import Feedback from "./main-components/Feedback.vue";
-import News from "./main-components/News.vue";
+import Blog from "./main-components/Blog.vue";
 import Start from "./main-components/Start.vue";
 
 export default {
   components: {
     Features,
     About,
-    Projects,
+    Showcase,
     Feedback,
-    News,
+    Blog,
     Start,
   },
 };
@@ -22,9 +22,9 @@ export default {
   <main>
     <Features />
     <About />
-    <Projects />
+    <Showcase />
     <Feedback />
-    <News />
+    <Blog />
     <Start />
   </main>
 </template>
