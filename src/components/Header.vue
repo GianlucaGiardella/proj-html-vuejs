@@ -109,14 +109,6 @@ nav {
   text-transform: uppercase;
 }
 
-.btn {
-  width: max-content;
-  padding: 0.9rem 2rem;
-  border-radius: 5rem;
-  text-transform: uppercase;
-  color: #ffffffcf;
-}
-
 .btn:hover {
   cursor: pointer;
 }
@@ -282,7 +274,6 @@ nav {
 
   .selection {
     .btn {
-      font-size: 0.8rem;
       padding: 0.8rem 1.2rem;
       border-radius: 5rem;
     }
