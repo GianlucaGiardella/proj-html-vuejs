@@ -36,7 +36,7 @@ export default {
         </li>
       </ul>
       <div class="actions">
-        <div class="purchase btn">Purchase</div>
+        <button class="purchase btn green-gradient">Purchase</button>
         <div class="search">
           <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
         </div>
@@ -58,10 +58,10 @@ export default {
         in the Bookmarksgrove right at the coast of the Semantics, a large
         language ocean.Separated they live in Bookmarksgrove.
       </p>
-      <div class="read-more btn">Read more</div>
+      <button class="read-more btn black-gradient">Read more</button>
       <p class="socials">Facebook - Instagram - Youtube- Twitter</p>
-      <div class="selection">
-        <div
+      <div class="selection black-gradient">
+        <button
           v-for="(btn, i) in arrJumboImg"
           :key="i"
           @click="activeJumboImg = i"
@@ -69,7 +69,7 @@ export default {
           class="btn"
         >
           0{{ i + 1 }}
-        </div>
+        </button>
       </div>
     </div>
   </header>
@@ -152,18 +152,13 @@ nav {
   }
 
   .actions {
-    .purchase {
-      background-image: linear-gradient(to right, #90e062, #00d9a6);
-      box-shadow: 6px 8px 60px -5px #9bffd0;
-    }
-
     .search {
       font-size: 1rem;
       color: #00d9a6;
     }
     .purchase:hover {
       background-image: linear-gradient(to right, #444444, #050505);
-      box-shadow: 6px 8px 60px -5px #70707059;
+      box-shadow: 6px 8px 60px -5px #333333;
     }
 
     .search:hover {
@@ -221,16 +216,6 @@ nav {
     }
   }
 
-  h2::after {
-    content: "";
-    display: block;
-    margin-top: 1.5rem;
-    height: 5px;
-    width: 15%;
-    border-radius: 5rem;
-    background-image: linear-gradient(to right, #90e062, #00d9a6);
-  }
-
   .text {
     max-width: 48%;
     margin-bottom: 3.3rem;
@@ -243,8 +228,6 @@ nav {
   .read-more {
     font-size: 0.8rem;
     margin-bottom: 4.4rem;
-    background-image: linear-gradient(to right, #444444, #050505);
-    box-shadow: 6px 8px 60px -5px #70707059;
   }
 
   .read-more:hover {
@@ -268,8 +251,6 @@ nav {
     z-index: 5;
     color: #f9f9f9;
     border-radius: 10rem;
-    background-image: linear-gradient(to right, #000000b3, #000000e6);
-    box-shadow: 6px 8px 60px -5px #70707059;
   }
 
   .selection {
