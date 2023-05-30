@@ -32,13 +32,13 @@ video {
 
 .btn {
   width: max-content;
-  padding: 0.9rem 2rem;
-  border-radius: 5rem;
+  padding: 1rem 2rem;
   font-size: 0.8rem;
   text-transform: uppercase;
   border: unset;
-  background-color: unset;
+  border-radius: 5rem;
   color: #ffffffcf;
+  background-color: unset;
 }
 
 .btn:hover,
@@ -59,9 +59,9 @@ svg:hover {
 h2::after {
   content: "";
   display: block;
-  margin-top: 1.5rem;
   height: 5px;
-  width: 15%;
+  width: 60px;
+  margin-top: 1.5rem;
   border-radius: 5rem;
   background-image: linear-gradient(to right, #90e062, #00d9a6);
 }
