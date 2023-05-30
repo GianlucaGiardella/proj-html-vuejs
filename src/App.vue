@@ -12,13 +12,14 @@ export default {
   data() {
     return {
       arrNav: ["Home", "About", "Services", "Showcase", "Blog", "Contact"],
+      arrJumboImg: ["jumbo-img-01.png", "jumbo-img-02.png", "jumbo-img-03.png"],
     };
   },
 };
 </script>
 
 <template>
-  <Header :nav="arrNav" />
+  <Header :arrNav="arrNav" :arrJumboImg="arrJumboImg" />
   <Main />
   <Footer />
 </template>
