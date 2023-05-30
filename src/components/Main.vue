@@ -1,5 +1,5 @@
 <script>
-import Design from "./main-components/Design.vue";
+import Features from "./main-components/Features.vue";
 import About from "./main-components/About.vue";
 import Projects from "./main-components/Projects.vue";
 import Feedback from "./main-components/Feedback.vue";
@@ -8,7 +8,7 @@ import Start from "./main-components/Start.vue";
 
 export default {
   components: {
-    Design,
+    Features,
     About,
     Projects,
     Feedback,
@@ -20,7 +20,7 @@ export default {
 
 <template>
   <main>
-    <Design />
+    <Features />
     <About />
     <Projects />
     <Feedback />
