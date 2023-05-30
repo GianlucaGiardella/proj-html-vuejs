@@ -59,7 +59,10 @@ export default {
         language ocean.Separated they live in Bookmarksgrove.
       </p>
       <button class="read-more btn black-gradient">Read more</button>
-      <p class="socials">Facebook - Instagram - Youtube- Twitter</p>
+      <p class="socials">
+        <span>Facebook</span> - <span>Instagram</span> - <span>Youtube</span> -
+        <span>Twitter</span>
+      </p>
       <div class="selection black-gradient">
         <button
           v-for="(btn, i) in arrJumboImg"
@@ -232,6 +235,11 @@ nav {
     font-size: 0.8rem;
     text-transform: uppercase;
     word-spacing: 0.3rem;
+  }
+
+  .socials > span:hover {
+    cursor: pointer;
+    color: #00d9a6;
   }
 
   .selection {
