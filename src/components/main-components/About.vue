@@ -3,7 +3,7 @@ export default {};
 </script>
 
 <template>
-  <section class="container">
+  <section class="container" id="About">
     <div class="images">
       <div class="bg">
         <img src="../../assets/images/about-02.jpg" alt="" />

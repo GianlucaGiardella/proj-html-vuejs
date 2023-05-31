@@ -3,7 +3,7 @@ export default {};
 </script>
 
 <template>
-  <section class="container">
+  <section class="container" id="Blog">
     <h2>Latest News & Our <span>Blog</span></h2>
     <div class="card-list">
       <div class="card">

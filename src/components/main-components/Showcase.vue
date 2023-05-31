@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <section class="container">
+  <section class="container" id="Showcase">
     <div class="presentation">
       <h2>
         Our recent <span>web designs</span> & <br />

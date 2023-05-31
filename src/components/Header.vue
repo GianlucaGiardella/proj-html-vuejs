@@ -8,6 +8,7 @@ export default {
     return {
       active: "Home",
       activeJumboImg: 0,
+      src: "https://www.google.com",
     };
   },
 };
@@ -32,7 +33,7 @@ export default {
           :class="link === active ? 'active' : ''"
           @click="active = link"
         >
-          {{ link }}
+          <a :href="`#${link}`">{{ link }}</a>
         </li>
       </ul>
       <div class="actions">
@@ -184,7 +185,6 @@ nav {
     position: absolute;
     top: -4%;
     right: -16%;
-    z-index: 1;
   }
 
   .experience {

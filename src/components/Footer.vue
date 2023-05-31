@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <footer>
+  <footer id="Contact">
     <div class="top-footer">
       <div class="logo">
         <img src="/logo.png" alt="" />
