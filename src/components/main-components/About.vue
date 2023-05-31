@@ -5,8 +5,10 @@ export default {};
 <template>
   <section class="container">
     <div class="images">
-      <img class="bg" src="../../assets/images/about-02.jpg" alt="" />
-      <img class="fg" src="../../assets/images/about-01.jpg" alt="" />
+      <div class="bg">
+        <img src="../../assets/images/about-02.jpg" alt="" />
+        <img class="fg" src="../../assets/images/about-01.jpg" alt="" />
+      </div>
     </div>
     <div class="presentation">
       <h2>
@@ -66,13 +68,14 @@ export default {};
 }
 
 .images {
-  img {
+  img,
+  .bg {
     width: 600px;
+    border-radius: 2rem;
   }
   .bg {
     position: relative;
     left: -40px;
-    border-radius: 2rem;
   }
 
   .bg::after {
@@ -80,15 +83,18 @@ export default {};
     display: block;
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(to top right, #90e062, #00d9a6);
+    border-radius: 2rem;
+    background: linear-gradient(to top right, #90e062, #00d9a6);
     opacity: 0.7;
   }
 
   .fg {
     position: absolute;
-    right: 5%;
-    bottom: -6%;
+    right: -12%;
+    bottom: -5%;
+    z-index: 9;
     border-radius: 1rem;
+    background: unset;
   }
 }
 </style>
