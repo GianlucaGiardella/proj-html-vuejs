@@ -68,11 +68,21 @@ h2::after {
   .logo > img {
     width: 176px;
   }
+
+  .logo > img:hover {
+    cursor: pointer;
+  }
+
   .logo > p,
   .list > li {
     font-size: 0.9rem;
     line-height: 1.4;
     color: #aaaaaa;
+  }
+
+  .list > li:hover {
+    cursor: pointer;
+    color: #00d9a6;
   }
 
   h2 {
@@ -87,6 +97,10 @@ h2::after {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .location > img:hover {
+    cursor: crosshair;
   }
 }
 
