@@ -36,6 +36,7 @@ export default {};
   display: flex;
   flex-direction: column;
   gap: 6rem;
+  background-color: #f5f5f5;
 }
 
 .container {

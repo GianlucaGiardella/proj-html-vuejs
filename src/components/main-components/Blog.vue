@@ -35,7 +35,7 @@ export default {};
 <style lang="scss" scoped>
 .container {
   padding: 9rem 1rem;
-  background-color: #ffffff99;
+  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
   align-items: center;
