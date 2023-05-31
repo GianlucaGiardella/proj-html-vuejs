@@ -8,4 +8,9 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(far, fas, fab);
 
-createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
+import BackToTop from "vue-backtotop";
+
+createApp(App)
+  .component("font-awesome-icon", FontAwesomeIcon)
+  .use(BackToTop)
+  .mount("#app");

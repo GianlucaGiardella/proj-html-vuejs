@@ -35,8 +35,45 @@ export default {
   <Header :arrNav="arrNav" :arrJumboImg="arrJumboImg" />
   <Main />
   <Footer :arrLinks="arrLinks" :arrContact="arrContact" />
+  <back-to-top visibleoffset="900">
+    <font-awesome-icon :icon="['fas', 'arrow-up']" />
+  </back-to-top>
+  <div class="message-us">
+    <font-awesome-icon :icon="['far', 'message']" />
+  </div>
 </template>
 
 <style lang="scss">
 @use "./assets/styles/general.scss" as *;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap");
+
+.vue-back-to-top {
+  width: 30px;
+  aspect-ratio: 1 / 1;
+  right: 6% !important;
+  bottom: 4% !important;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  background-color: #e5e3df;
+}
+
+.vue-back-to-top:hover {
+  cursor: pointer;
+  color: #00d9a6;
+}
+
+.message-us {
+  position: fixed;
+  right: 2%;
+  bottom: 3%;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #527ceb;
+}
 </style>
