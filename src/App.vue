@@ -13,6 +13,19 @@ export default {
     return {
       arrNav: ["Home", "About", "Services", "Showcase", "Blog", "Contact"],
       arrJumboImg: ["jumbo-img-01.png", "jumbo-img-02.png", "jumbo-img-03.png"],
+      arrLinks: [
+        "Careers",
+        "News",
+        "Terms of use",
+        "Privacy Projects",
+        "About",
+        "Contact",
+      ],
+      arrContact: [
+        "Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051",
+        "info@yourdomain.com",
+        "+99 (0) 101 0000 888",
+      ],
     };
   },
 };
@@ -21,7 +34,7 @@ export default {
 <template>
   <Header :arrNav="arrNav" :arrJumboImg="arrJumboImg" />
   <Main />
-  <Footer />
+  <Footer :arrLinks="arrLinks" :arrContact="arrContact" />
 </template>
 
 <style lang="scss">
