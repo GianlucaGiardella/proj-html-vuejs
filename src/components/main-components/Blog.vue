@@ -107,6 +107,9 @@ export default {};
           display: flex;
           align-items: center;
           gap: 0.5rem;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
         }
 
         h3::before {

@@ -55,6 +55,7 @@ export default {};
       justify-content: center;
       gap: 1.5rem;
       border-radius: 1rem;
+      overflow: hidden;
     }
 
     .card {
@@ -64,15 +65,18 @@ export default {};
       }
 
       h3 {
-        color: #ffffff;
-        font-size: 2.3rem;
         margin-bottom: 2.5rem;
+        font-size: 2.3rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #ffffff;
       }
     }
 
     .new-project {
       form {
-        width: 450px;
+        width: 70%;
         display: flex;
         border-radius: 5rem;
         background-color: #70707059;

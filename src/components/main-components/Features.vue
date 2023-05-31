@@ -114,6 +114,7 @@ h2 > span {
   background-color: #ffffff;
   border-radius: 1rem;
   box-shadow: 6px 8px 60px -5px #aaaaaa;
+  overflow: hidden;
 }
 
 .card {
@@ -125,6 +126,9 @@ h2 > span {
   h3 {
     font-size: 1.8rem;
     margin-bottom: 1.3rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   p {
