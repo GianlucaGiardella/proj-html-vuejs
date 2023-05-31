@@ -1,5 +1,17 @@
 <script>
-export default {};
+import store from "../../store";
+
+export default {
+  setup() {
+    const imageUrl = new URL("../../assets/images/ ", import.meta.url).href;
+    return { imageUrl };
+  },
+  data() {
+    return {
+      store,
+    };
+  },
+};
 </script>
 
 <template>
@@ -21,14 +33,17 @@ export default {};
       </p>
     </div>
     <div class="showcase">
-      <img src="../../assets/images/showcase-01.jpg" alt="" />
-      <img src="../../assets/images/showcase-02.jpg" alt="" />
-      <img src="../../assets/images/showcase-03.jpg" alt="" />
-      <img src="../../assets/images/showcase-04.jpg" alt="" />
-      <img src="../../assets/images/showcase-05.jpg" alt="" />
-      <img src="../../assets/images/showcase-06.jpg" alt="" />
-      <img src="../../assets/images/showcase-07.jpg" alt="" />
-      <img src="../../assets/images/showcase-08.jpg" alt="" />
+      <div
+        v-for="showcase in store.arrShowcase"
+        :key="showcase.id"
+        class="img-container"
+      >
+        <img :src="`${imageUrl}${showcase.src}`" :alt="showcase.name" />
+        <div class="hover-content">
+          <h3>{{ showcase.name }}</h3>
+          <p>{{ showcase.type }}</p>
+        </div>
+      </div>
     </div>
     <button class="more btn green-gradient">Read more</button>
     <div class="side-buttons">
@@ -96,8 +111,50 @@ export default {};
 }
 
 .showcase {
-  img {
+  .img-container {
     border-radius: 0.5rem;
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hover-content {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+      to top right,
+      rgba(144, 224, 98, 0.7),
+      rgba(0, 217, 166, 0.7)
+    );
+    color: #ffffff;
+  }
+
+  .hover-content {
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .img-container:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 7;
+  }
+
+  .img-container:hover .hover-content {
+    z-index: 9;
   }
 }
 
@@ -112,6 +169,7 @@ export default {};
 
 .side-buttons {
   position: absolute;
+  z-index: 9;
   right: 0;
   top: 45%;
   display: flex;
