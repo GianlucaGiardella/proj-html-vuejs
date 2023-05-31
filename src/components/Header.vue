@@ -180,8 +180,8 @@ nav {
 
 .jumbo {
   img {
-    min-width: 1020px;
     max-width: 78%;
+    min-width: 905px;
     position: absolute;
     top: -4%;
     right: -16%;
