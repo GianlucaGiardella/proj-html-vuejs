@@ -44,19 +44,19 @@ export default {
           <p>{{ showcase.type }}</p>
         </div>
       </div>
+      <div class="side-buttons">
+        <div class="side-btn">
+          <font-awesome-icon :icon="['fas', 'border-all']" /> Browse Demos
+        </div>
+        <div class="side-btn">
+          <font-awesome-icon :icon="['fas', 'bag-shopping']" /> Buy Now!
+        </div>
+        <div class="side-btn">
+          <font-awesome-icon :icon="['fas', 'file-export']" /> Export Section
+        </div>
+      </div>
     </div>
     <button class="more btn green-gradient">Read more</button>
-    <div class="side-buttons">
-      <div class="side-btn">
-        <font-awesome-icon :icon="['fas', 'border-all']" /> Browse Demos
-      </div>
-      <div class="side-btn">
-        <font-awesome-icon :icon="['fas', 'bag-shopping']" /> Buy Now!
-      </div>
-      <div class="side-btn">
-        <font-awesome-icon :icon="['fas', 'file-export']" /> Export Section
-      </div>
-    </div>
   </section>
 </template>
 
@@ -108,6 +108,7 @@ export default {
   grid-template-rows: repeat(2, minmax(0, 1fr));
   column-gap: 0.3rem;
   row-gap: 0.1rem;
+  position: relative;
 }
 
 .showcase {
@@ -156,6 +157,32 @@ export default {
   .img-container:hover .hover-content {
     z-index: 9;
   }
+
+  .side-buttons {
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .side-buttons {
+    .side-btn {
+      color: #f5f5f5;
+      font-size: 0.7rem;
+      padding: 0.6rem 0.8rem;
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+      background-color: #00000073;
+    }
+
+    .side-btn:hover {
+      cursor: pointer;
+      color: #00d9a6;
+    }
+  }
 }
 
 .more {
@@ -165,31 +192,5 @@ export default {
 .more:hover {
   background-image: linear-gradient(to right, #444444, #050505);
   box-shadow: 6px 8px 60px -5px #333333;
-}
-
-.side-buttons {
-  position: absolute;
-  z-index: 9;
-  right: 0;
-  top: 45%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.side-buttons {
-  .side-btn {
-    color: #f5f5f5;
-    font-size: 0.7rem;
-    padding: 0.7rem;
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-    background-color: #00000073;
-  }
-
-  .side-btn:hover {
-    cursor: pointer;
-    color: #00d9a6;
-  }
 }
 </style>
