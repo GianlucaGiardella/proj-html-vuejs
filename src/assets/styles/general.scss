@@ -12,10 +12,16 @@
 
 html {
   font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 ul {
